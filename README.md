@@ -1,11 +1,13 @@
 # jhazelwo/gitd
 
-* Put your public key(s) in spool/authorized_keys
+### Remote server:
+
+* Put your public key(s) in `spool/authorized_keys`
 * `./container.sh build`
-* `./container.sh ./run`
-* `git remote add origin ssh://git@remote-host:2222/git/repo.git`
+* `./container.sh run`
+    * (optional) Use `-v` to map `/git/repo.git/` to permanent storage on
+    the Docker host. See `$volumes` in `container.sh`
 
-### Optional
+### Workstation:
 
-* Use `-v` to map /git/repo.git to permanent storage on the Docker
-host. See `$volumes` in `container.sh`
+* `git remote add origin ssh://git@remote-server:2222/git/repo.git`
