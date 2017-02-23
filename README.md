@@ -1,4 +1,4 @@
-# jhazelwo/gitd
+# A simple 1 repo git server
 
 ### Remote server:
 

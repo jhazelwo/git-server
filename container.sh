@@ -1,6 +1,6 @@
 #!/bin/sh
 contname="gitd"
-image_name="jhazelwo/${contname}:0.1"
+image_name="jhazelwo/${contname}:1.0"
 nodename="--hostname=${contname}"
 runname="--name=${contname}"
 # run_rm="--rm=true"
